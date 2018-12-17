@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 
+
 <?php
 require_once "check.php";
 session_start();
@@ -11,6 +12,9 @@ $_SESSION["emailaddr"] = $_POST["emailaddr"];
 $_SESSION["comment"] = $_POST["comment"];			
 } 
 ?>
+
+
+
 
 	<html lang="en">
 		<head>
@@ -42,7 +46,7 @@ echo "<p>". "Why you're registering:   " .$_SESSION["comment"]. "</p>";
 ?>
 <div>
 
-<form action="saved.php">
+<form action="redirect2.php">
 	<input type="submit" name="loggin" class="button" value="Save">
 </form>
 

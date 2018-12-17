@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <?php
 session_start();
-session_destroy();
 ?>
 
 	<html lang="en">
@@ -23,6 +22,16 @@ session_destroy();
 
 	<p>Thank You!</p>
 	<p>Your data has been stored successfully!</p>
+<?php
+
+require_once "logininfoPDO.php";
+$testme = new loginPDO();
+$hits = $testme->allInfo();
+
+
+
+?>
+
 
 </body>
 </html>
