@@ -14,8 +14,8 @@ class loginPDO{
 	function allInfo() {
 
 		//LOGIN
-		$user='root';
-		$password='salainen';
+		$user='';
+		$password='';
 
 		//COnnection
 		$datab='a1704571';
